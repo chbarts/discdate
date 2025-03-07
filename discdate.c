@@ -4,6 +4,8 @@
 #define _GNU_SOURCE
 #include <getopt.h>
 
+/* Modified from https://rosettacode.org/wiki/Discordian_date */
+
 #define day_of_week( x ) ((x) == 1 ? "Sweetmorn" :\
                           (x) == 2 ? "Boomtime" :\
                           (x) == 3 ? "Pungenday" :\
