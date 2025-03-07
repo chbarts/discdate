@@ -174,12 +174,17 @@ int main(int argc, char *argv[])
     }
 
     if (2 == m) {
-        if (leap_year(y) && (d > 29)) {
-            fprintf(stderr, "discdate: impossible date\n");
-            exit(EXIT_FAILURE);
-        } else if (d > 28) {
-            fprintf(stderr, "discdate: impossible date\n");
-            exit(EXIT_FAILURE);
+        if (leap_year(y)) {
+            if (d > 29) {
+                fprintf(stderr, "discdate: impossible date\n");
+                exit(EXIT_FAILURE);
+            }
+    
+        } else {
+            if (d > 28) {
+                fprintf(stderr, "discdate: impossible date\n");
+                exit(EXIT_FAILURE);
+            }
         }
 
     } else if (d > months[m - 1]) {
