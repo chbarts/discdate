@@ -131,10 +131,10 @@ int main(int argc, char *argv[])
             case 2:
                 y = atoi(optarg);
                 break;
-            case 4:
+            case 3:
                 help(argv[0]);
                 return 0;
-            case 5:
+            case 4:
                 version();
                 return 0;
             default:
@@ -157,6 +157,7 @@ int main(int argc, char *argv[])
             return 0;
         case 'v':
             version();
+            return 0;
         default:
             help(argv[0]);
             exit(EXIT_FAILURE);
