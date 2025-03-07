@@ -71,6 +71,8 @@ void help(char name[])
     puts("  -m, --month MONTH       month, from 1 (January) to 12 (December)");
     puts("  -d, --day DAY           day of month, from 1 to 28, 30, or 31)");
     puts("  -y, --year YEAR         year, from 1 to INT_MAX");
+    puts("  -h, --help              print this help");
+    puts("  -v, --version           print version information");
     puts("");
     puts("If an option is missing or zero, assumes current value.");
     puts("The year must be complete; two-digit years will (usually)");
