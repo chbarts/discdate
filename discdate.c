@@ -147,7 +147,7 @@ int main(int argc, char *argv[])
             m = atoi(optarg);
             break;
         case 'd':
-            m = atoi(optarg);
+            d = atoi(optarg);
             break;
         case 'y':
             y = atoi(optarg);
