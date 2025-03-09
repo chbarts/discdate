@@ -166,7 +166,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    if ((m <= 0) || (d <= 0)) {
+    if ((m <= 0) || (d <= 0) || (m > 12)) {
         fprintf(stderr,
                 "discdate: Meaningless date year: %d month: %d day: %d\n",
                 y, m, d);
